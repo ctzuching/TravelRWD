@@ -1,0 +1,109 @@
+/* (整體)Offcanvas */
+	  
+  .offcanvas-header 
+  {
+    display: none;
+	padding: 1rem 0 0;
+	justify-content: space-between
+  }
+	  
+  .offcanvas-title
+  {
+    font-weight: bold;
+	color: rgba(255, 255, 255, .55)
+  }
+	  
+  .offcanvas-title svg {margin-right: 10px}
+	  
+  .offcanvasHr {color: rgba(255, 255, 255, .55)}
+	  
+  .left-btnClose, .right-btnClose
+  {
+    width: 1.8rem;
+	cursor: pointer
+  }
+
+
+@media all and (max-width: 767.98px)
+{
+	
+  /* (手機版)Offcanvas */
+
+    .offcanvas-header {display: flex}
+	
+
+  /* offcanvas 背景 */   
+   
+    .left-backdrop, .right-backdrop
+    {
+      position: fixed;
+	  top: 57.5px;
+	  right: 0;
+	  z-index: 1000;
+	  height: 100%;
+	  width: 0%;
+	  opacity: 0;
+	  visibility: hidden;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  transition: opacity .2s linear, visibility 0.2s, width 2s ease-in
+    }
+
+    .left-backdrop.active, .right-backdrop.active
+    {
+      opacity: 1;
+      width: 100%;
+      visibility: visible;
+	  transition: opacity .3s ease, width 0s
+    }
+  
+  
+  /* 左側摺疊 */
+  
+    .left-offcanvas-collapse
+    {
+	  position: fixed;
+      top: 57.5px; /* Height of navbar 原56px */
+      bottom: 0;
+      right: 100%;
+	  z-index: 1000;
+      width: 80%;
+      padding: 0 1rem 1rem 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: #3D514A;
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out
+    }
+  
+    .left-offcanvas-collapse.open
+    {
+      visibility: visible;
+      transform: translateX(100%)
+    }
+ 
+ 
+  /* 右側摺疊 */
+  
+    .right-offcanvas-collapse
+    {
+      position: fixed;
+      top: 57.5px;
+      bottom: 0;
+      left: 100%;
+	  z-index: 1000;
+      width: 80%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: #3D514A;
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out
+    }
+  
+    .right-offcanvas-collapse.open
+    {
+      visibility: visible;
+      transform: translateX(-100%)
+    }
+}
+
+

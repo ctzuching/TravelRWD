@@ -1,0 +1,35 @@
+/* Modal */
+
+  #beginModal
+  {
+    max-width: var(--bs-modal-width);
+    height: fit-content;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: transform 0.3s ease
+  }
+
+  #beginModal .modal-dialog {margin: auto}
+
+  #backdropModal
+  {    	    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5
+  }
+
+  .modalMark {color: red}
+
+
+@media all and (max-width: 575.98px)
+{
+  #beginModal .modal-dialog {margin: auto var(--bs-modal-margin)}  
+}
+
+

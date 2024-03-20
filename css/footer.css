@@ -1,0 +1,120 @@
+/* 頁尾 */
+
+  #footerWrapper
+  { 
+    padding-top: 20px;
+    background-color: #21252b
+  }
+  
+  #footer-brand
+  {
+    display: flex;
+    align-items: center;
+	margin-bottom: 1rem
+  }
+  
+  #footer-brand img
+  { 
+    width: 2.5rem;
+    margin-right: 8px
+  }
+  
+  #footer-brand span
+  { 
+	color: #61656d;
+    font-family: 'ReggaeOne-Regular';
+    font-size: 1.563rem
+  }
+  
+  .footer-item {margin-bottom: 1rem}
+  
+  .footer-item h5 {color: #61656d}
+  
+  .footer-item ul
+  {
+    list-style-type: none;
+	padding: 0
+  }
+  
+  .footer-item li {margin-bottom: 0.5rem}
+  
+  .footer-item a
+  {
+	color: #fff;
+    text-decoration: none
+  }
+  
+  .footer-item a:hover {color: #61656d}
+  
+  .footer-item form p {color: #fff}
+  
+  .footer-item form button
+  {
+	color: #61656d;
+	border-color: #61656d
+  }
+  
+  .footer-item form button:hover
+  {
+	color: #fff;
+	background-color: #61656d
+  }
+  
+  #footerCopyright
+  {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.5rem 0;
+	border-top: 1px solid #fff
+  }
+  
+  #footerCopyright p {color: #61656d}
+  
+  #footerCopyright ul
+  {
+    display: flex;
+	padding: 0;
+	list-style-type: none
+  }
+  
+  #footerCopyright li {margin-left: 1rem}
+  
+  #footerCopyright svg
+  {
+	display: flex;
+	width: 25px;
+	height: 25px;
+	color: #fff
+  }
+  
+  #footerCopyright svg:hover {color: #61656d}
+  
+
+/* 回到頁首-按鈕 */
+
+  #goTopBtn
+  {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #198754;
+    color: #ffffff;
+    padding: 13px;
+	cursor: pointer;
+    border-radius: 0.625rem
+  }
+
+  #goTopBtn:hover {background-color: #61656d}
+  
+  #goTopBtn svg
+  {
+    display: flex;
+	width: 1.25rem;
+	height: 1.25rem
+  }
+  
+  
+  
